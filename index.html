@@ -18,7 +18,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar_container">
             <div class="navbar_logo">
-                <img src="./images/logo.webp" alt="Bookiva">
+                <img src="./images/logo.png" alt="Bookiva">
             </div>
             <div class="navbar_toggle" id="mobile_menu">
                 <span class="bar"></span>
@@ -27,22 +27,22 @@
             </div>
             <ul class="navbar_menu">
                 <li class="navbar_items">
-                    <a href="#home" class="navbar_links">Home</a>
+                    <a href="#home" onclick="mobileMenu()" class="navbar_links">Home</a>
                 </li>
                 <li class="navbar_items">
-                    <a href="#about" class="navbar_links">About us</a>
+                    <a href="#about" onclick="mobileMenu()" class="navbar_links">About us</a>
                 </li>
                 <li class="navbar_items">
-                    <a href="#browse" class="navbar_links">Browse</a>
+                    <a href="#browse" onclick="mobileMenu()"  class="navbar_links">Browse</a>
                 </li>
                 <li class="navbar_items">
-                    <a href="#howto" class="navbar_links">How it works</a>
+                    <a href="#howto" onclick="mobileMenu()"  class="navbar_links">How it works</a>
                 </li>
                 <li class="navbar_items">
-                    <a href="#contact" class="navbar_links">Contact us</a>
+                    <a href="#contact" onclick="mobileMenu()"  class="navbar_links">Contact us</a>
                 </li>
                 <li class="navbar_btn">
-                    <a href="/" class="button">Sign up</a>
+                    <a href="./login.html"  onclick="mobileMenu()" class="button">Sign in</a>
                 </li>
             </ul>
         </div>
@@ -55,7 +55,7 @@
             <h1 class="hero_heading">Discover the Perfect Venue for Your Event</h1>
             <p class="hero_description">Whether you're planning an event or looking for a space to study, Bookiva makes it simple to reserve the perfect venue on campus. Get started today and streamline your booking experience.</p>
             <button class="hero_btn">
-                <a href="/">BOOK NOW</a>
+                <a href="./venues.html">BOOK NOW</a>
             </button>
         </div>
     </div>
@@ -64,7 +64,7 @@
     <div class="about" id="about">
         <div class="about_container">
             <div class="about_img">
-                <img src="./images/about-us.webp" alt="abt-img">
+                <img src="./images/about-us.png" alt="abt-img">
             </div>
         <div class="about_content_container">
             <h3 class="about_heading">About Us</h3>
@@ -74,9 +74,6 @@
                 <p>Book your hall today and unlock endless possibilities.
                 <i>Bookiva-Where Extraordinary Events Begin.</i></p>
             </div>
-            <button class="about_btn">
-                <a href="/">VISIT</a>
-            </button>
         </div>
         </div>
     </div>
@@ -90,96 +87,171 @@
             </div>
         </div>
         <div class="container">
+            <div class="slide-track">
             <div class="card">
                 <div class="card-image">
-                    <img src="./venue images/alpha-hall.webp" alt="">
+                    <img src="./venue images/hall-img.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="venue-details">
                         <h2>Alpha Hall</h2>
-                        <p>Capacity: 200</p>
-                    </div>
-                    <div class="rating">
-
+                        <p>Capacity:___</p>
                     </div>
                 </div>
-                <a href="/">Book now</a>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="./venue images/alpha-hall.webp" alt="">
+                    <img src="./venue images/hall2-img.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="venue-details">
                         <h2>Beta Hall</h2>
-                        <p>Capacity: 200</p>
-                    </div>
-                    <div class="rating">
-
+                        <p>Capacity:___</p>
                     </div>
                 </div>
-                <a href="/">Book now</a>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="./venue images/alpha-hall.webp" alt="">
+                    <img src="./venue images/hall3.webp" alt="">
                 </div>
                 <div class="content">
                     <div class="venue-details">
                         <h2>Gamma Hall</h2>
-                        <p>Capacity: 200</p>
-                    </div>
-                    <div class="rating">
-
+                        <p>Capacity:___</p>
                     </div>
                 </div>
-                <a href="/">Book now</a>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="./venue images/alpha-hall.webp" alt="">
+                    <img src="./venue images/sigma_hall.png" alt="">
                 </div>
                 <div class="content">
                     <div class="venue-details">
                         <h2>Sigma Hall</h2>
-                        <p>Capacity: 500</p>
-                    </div>
-                    <div class="rating">
-
+                        <p>Capacity:___</p>
                     </div>
                 </div>
-                <a href="/">Book now</a>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall-img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>SSR Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall3.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>VRR Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall-img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>Alpha Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall2-img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>Beta Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall3.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>Gamma Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/sigma_hall.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>Sigma Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall-img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>SSR Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./venue images/hall3.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="venue-details">
+                        <h2>VRR Hall</h2>
+                        <p>Capacity:___</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="see-more">
             <button class="view-more">
-                <a href="/">VIEW MORE</a>
+                <a href="/venues.html">VIEW ALL AVAILABLE VENUES</a>
             </button>
         </div>
     </div>   
 
     <!--how it works-->
-    <section class="how-it-works" id="howto">
+    <div class="how-to" id="howto">
+    <div class="how-it-works">
         <p class="how-it-works-easy-fast">Easy and Fast</p>
         <h1 class="how-it-works-heading">Book Your Rooms/Halls In 3 Easy Steps</h1>
         <div class="how-it-works-container">            
           <div class="steps">
             <div class="steps-item">
-              <img src="./images/check-square.webp" alt="check-img">
+              <img src="./images/check-square.png" alt="check-img">
               <div class="steps-text">
                 <h2 class="steps-heading">Select Room/Hall</h2>
                 <p class="steps-content">Choose the perfect room or hall from our diverse collection.</p>
               </div>
             </div>
             <div class="steps-item">
-              <img src="./images/check-square.webp" alt="check-img">
+              <img src="./images/check-square.png" alt="check-img">
               <div class="steps-text">
                 <h2 class="steps-heading">Check availability on the required date and time</h2>
                 <p class="steps-content">Ensure the room/hall is available for your desired event date and time.</p>
               </div>
             </div>
             <div class="steps-item">
-              <img src="./images/check-square.webp" alt="check-img">
+              <img src="./images/check-square.png" alt="check-img">
               <div class="steps-text">
                 <h2 class="steps-heading">Make a reservation</h2>
                 <p class="steps-content">Secure your booking and confirm your event with ease.</p>
@@ -187,32 +259,33 @@
             </div>
           </div>
           <div class="book-img">
-            <img src="./images/undraw_Check_boxes_re_v40f_1-removebg-preview.webp" alt="book-img">
+            <img src="./images/undraw_Check_boxes_re_v40f_1-removebg-preview.png" alt="book-img">
           </div>
         </div>
-    </section>
+    </div>
+    </div>
 
   <!--footer-->
   <section id="contact" class="footer">
     <div class="contact">
         <div class="logo">
-          <img src="./images/logo.webp" alt="logo-img">
+          <img src="./images/logo.png" alt="logo-img">
         </div>
         <div class="address">
-          <img src="./images/location-removebg-preview.webp" alt="contact-img">
+          <img src="./images/location-removebg-preview.png" alt="contact-img">
           <div class="address_line">
             <p>Sai Leo Nagar, West Tambaram, Chennai, Tamil Nadu, India - 600044</p>
           </div>
         </div>
         <div class="mail">
-          <img src="./images/mail-logo.webp" alt="contact-img">
+          <img src="./images/mail logo .png" alt="contact-img">
           <div class="mail_line">
             <p>sairam@sairam.edu.in</p>
             <p>career@sairam.edu.in</p>
           </div>
         </div>
         <div class="phone">
-          <img src="./images/phone.webp" alt="contact-img">
+          <img src="./images/phone.png" alt="contact-img">
           <div class="phone_line">
             <p>PHONE: 044 - 2251 2222</p>
             <p>FAX: 044 - 2251 2229</p>
@@ -240,5 +313,6 @@
         </div>
     </section>
     <script src="/js/main.js"></script>
+    <script src="/js/cal.js"></script>
 </body>
 </html>
