@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/venue.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+
+    <title>Venues</title>
+</head>
+<body>
+    <!--navbar section -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar_container">
+            <div class="navbar_logo">
+                <img src="./images/logo.png" alt="Bookiva">
+            </div>
+            <div class="navbar_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_items">
+                    <a href="./index.html"  onclick="mobileMenu()" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_items">
+                    <a href="./index.html#about"  onclick="mobileMenu()" class="navbar_links">About us</a>
+                </li>
+                <li class="navbar_items">
+                    <a href="./index.html#browse"  onclick="mobileMenu()" class="navbar_links">Browse</a>
+                </li>
+                <li class="navbar_items">
+                    <a href="./index.html#howto"  onclick="mobileMenu()"  class="navbar_links">How it works</a>
+                </li>
+                <li class="navbar_items">
+                    <a href="./index.html#contact"  onclick="mobileMenu()" class="navbar_links">Contact us</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="./login.html"  onclick="mobileMenu()" class="button">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--venues page-->
+    <div class="page_container">
+    <div class="venue-heading">
+        <h3>Venues</h3>
+    </div>
+    <div class="cards_container">
+        <div class="venue-card">
+            <img src="./venue images/sigma_hall.png" alt="" class="card_img">
+            <div class="card_content">
+                <div class="hall-name-rating">
+                    <h3 class="hall-name">Alpha Hall</h3>
+                    <h3 class="hall-rating">⭐ 4.6</h3>
+                </div>
+                <p>100</p>
+                <p>Unreserved</p>
+            </div>
+            <div class="details"><button class="button" onclick="togglePopup('1')">DETAILS</button></div>
+        </div>
+        <div class="venue-card">
+            <img src="./venue images/hall-img.jpg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="hall-name-rating">
+                    <h3 class="hall-name">Beta Hall</h3>
+                    <h3 class="hall-rating">⭐ 4.5</h3>
+                </div>
+                <p>100</p>
+                <p>Unreserved</p>
+            </div>
+            <div class="details"><button class="button" onclick="togglePopup('2')">DETAILS</button></div>
+        </div>
+        <div class="venue-card">
+            <img src="./venue images/hall2-img.jpg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="hall-name-rating">
+                    <h3 class="hall-name">Gamma Hall</h3>
+                    <h3 class="hall-rating">⭐ 4.6</h3>
+                </div>
+                <p>100</p>
+                <p>Unreserved</p>
+            </div>
+            <div class="details"><button class="button" onclick="togglePopup('3')">DETAILS</button></div>
+        </div>
+        <div class="venue-card">
+            <img src="./venue images/hall3.webp" alt="" class="card_img">
+            <div class="card_content">
+                <div class="hall-name-rating">
+                    <h3 class="hall-name">Sigma Hall</h3>
+                    <h3 class="hall-rating">⭐ 4.4</h3>
+                </div>
+                <p>500</p>
+                <p>Unreserved</p>
+            </div>
+            <div class="details"><button class="button" onclick="togglePopup('4')">DETAILS</button></div>
+        </div>
+    </div> 
+    </div>
+
+    <!--Details popup-->
+    <div class="wrapper popup_1" id="popup-1">
+        <span class="icon-close" onclick="togglePopup('1')">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+            <div class="headings">
+                <div><p>BOOK YOUR VENUE NOW</p></div>
+                <div><h3>venue details</h3></div>
+            </div>
+            <div class="info-container">
+                <div class="popup-venue-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-1 fade">
+                            <img src="/venue images/hall-img.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-1 fade">
+                            <img src="/venue images/sigma_hall.png" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-1 fade">
+                            <img src="/venue images/hall2-img.jpg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="hall-rating">
+                            <h3 class="hall-name">Alpha Hall,Sairam Engineering College</h3>
+                            <h3 class="rating">⭐ 4.6</h3>
+                        </div>
+                         <div class="information-container">
+                            <p>Number of seats:100</p>
+                            <p>Has AC? Yes</p>
+                            <p>Projector available? Yes</p>
+                            <p>Is the hall reserved? Yes</p>
+                            <p>Distance from main gate: 600</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking">
+                    <div class="cal-info">
+                    <div class="calender">
+                        <form>
+                            <input type="date" id="date-picker" placeholder="Please select date">
+                        </form>
+                    </div>
+                    <div class="confirm-message">
+                        This hall is in working condition to reserve.
+                        Contact admin for further help.
+                    </div>
+                    </div>
+                <div class="book-now">
+                    <p>Booking using Email id ___________<br></p>
+                    <a href="forms.html">RESERVE VENUE</a> 
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrapper" id="popup-2">
+        <span class="icon-close" onclick="togglePopup('2')">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+            <div class="headings">
+                <div><p>BOOK YOUR VENUE NOW</p></div>
+                <div><h3>venue details</h3></div>
+            </div>
+            <div class="info-container">
+                <div class="popup-venue-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-2 fade">
+                            <img src="/venue images/hall-img.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-2 fade">
+                            <img src="/venue images/sigma_hall.png" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-2 fade">
+                            <img src="/venue images/hall2-img.jpg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="hall-rating">
+                            <h3 class="hall-name">Beta Hall,Sairam Engineering College</h3>
+                            <h3 class="rating">⭐ 4.5</h3>
+                        </div>
+                         <div class="information-container">
+                            <p>Number of seats:100</p>
+                            <p>Has AC? Yes</p>
+                            <p>Projector available? Yes</p>
+                            <p>Is the hall reserved? Yes</p>
+                            <p>Distance from main gate: 600</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking">
+                    <div class="cal-info">
+                    <div class="calender">
+                        <form>
+                            <input type="date" id="date-picker" placeholder="Please select date">
+                        </form>
+                    </div>
+                    <div class="confirm-message">
+                        This hall is in working condition to reserve.
+                        Contact admin for further help.
+                    </div>
+                    </div>
+                <div class="book-now">
+                    <p>Booking using Email id ___________<br></p>
+                    <a href="forms.html">RESERVE VENUE</a> 
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrapper" id="popup-3">
+        <span class="icon-close" onclick="togglePopup('3')">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+            <div class="headings">
+                <div><p>BOOK YOUR VENUE NOW</p></div>
+                <div><h3>venue details</h3></div>
+            </div>
+            <div class="info-container">
+                <div class="popup-venue-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-3 fade">
+                            <img src="/venue images/hall-img.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-3 fade">
+                            <img src="/venue images/sigma_hall.png" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-3 fade">
+                            <img src="/venue images/hall2-img.jpg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides3(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides3(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="hall-rating">
+                            <h3 class="hall-name">Gamma Hall,Sairam Engineering College</h3>
+                            <h3 class="rating">⭐ 4.6</h3>
+                        </div>
+                         <div class="information-container">
+                            <p>Number of seats:100</p>
+                            <p>Has AC? Yes</p>
+                            <p>Projector available? Yes</p>
+                            <p>Is the hall reserved? Yes</p>
+                            <p>Distance from main gate: 600</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking">
+                    <div class="cal-info">
+                    <div class="calender">
+                        <form>
+                            <input type="date" id="date-picker" placeholder="Please select date">
+                        </form>
+                    </div>
+                    <div class="confirm-message">
+                        This hall is in working condition to reserve.
+                        Contact admin for further help.
+                    </div>
+                    </div>
+                <div class="book-now">
+                    <p>Booking using Email id ___________<br></p>
+                    <a href="forms.html">RESERVE VENUE</a> 
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrapper" id="popup-4">
+        <span class="icon-close" onclick="togglePopup('4')">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+            <div class="headings">
+                <div><p>BOOK YOUR VENUE NOW</p></div>
+                <div><h3>venue details</h3></div>
+            </div>
+            <div class="info-container">
+                <div class="popup-venue-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-4 fade">
+                            <img src="/venue images/hall-img.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-4 fade">
+                            <img src="/venue images/sigma_hall.png" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-4 fade">
+                            <img src="/venue images/hall2-img.jpg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides4(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides4(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="hall-rating">
+                            <h3 class="hall-name">Sigma Hall,Sairam Engineering College</h3>
+                            <h3 class="rating">⭐ 4.6</h3>
+                        </div>
+                         <div class="information-container">
+                            <p>Number of seats:100</p>
+                            <p>Has AC? Yes</p>
+                            <p>Projector available? Yes</p>
+                            <p>Is the hall reserved? Yes</p>
+                            <p>Distance from main gate: 500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking">
+                    <div class="cal-info">
+                    <div class="calender">
+                        <form>
+                            <input type="date" id="date-picker" placeholder="Please select date">
+                        </form>
+                    </div>
+                    <div class="confirm-message">
+                        This hall is in working condition to reserve.
+                        Contact admin for further help.
+                    </div>
+                    </div>
+                <div class="book-now">
+                    <p>Booking using Email id ___________<br></p>
+                    <a href="forms.html">RESERVE VENUE</a> 
+                </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cal.js"></script>
+</body>
+</html>
